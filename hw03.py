@@ -19,6 +19,7 @@ def ternarySearch(arr, k, buff=0):
     if k < arr[a3]: return ternarySearch(arr[a2:a3], k, buff=a2 + buff)
     return ternarySearch(arr[a3:], k, buff=a3 + buff)
 
+## EX5: binary insertion sort
 def binary_insertion_sort(arr):
     ans = arr[:1]
     for i in range(1, len(arr)):
@@ -51,6 +52,7 @@ def binary_search_to_insert(arr:list , k, buff=0):
     if k < arr[a2]: return binary_search_to_insert(arr[:a2], k, buff= buff)
     return binary_search_to_insert(arr[a2:], k, buff= a2 + buff)
 
+## Ex7: insertion sort
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         j = i
